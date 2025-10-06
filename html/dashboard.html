@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glimpse - Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="logo">
+                <i class="fas fa-eye"></i>
+                <span class="logo-text">Glimpse</span>
+            </div>
+            <div class="user-menu">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </header>
+
+        <!-- News Feed Section -->
+        <main class="main-content">
+            <div class="news-feed">
+                <h2 class="feed-title">News Feed</h2>
+                
+                <div class="post-item">
+                    <div class="post-header">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="user-info">
+                            <h4>Sarah Johnson</h4>
+                            <span class="post-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Just finished an amazing project using the new design system. The components are so intuitive and well-documented!</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn"><i class="fas fa-heart"></i> 12</button>
+                        <button class="action-btn"><i class="fas fa-comment"></i> 3</button>
+                        <button class="action-btn"><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <div class="post-header">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="user-info">
+                            <h4>Mike Chen</h4>
+                            <span class="post-time">4 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Looking for feedback on my latest UI mockup. What do you think about the color scheme and layout?</p>
+                        <div class="post-image">
+                            <div class="placeholder-image">
+                                <i class="fas fa-image"></i>
+                                <span>Design Mockup</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn"><i class="fas fa-heart"></i> 8</button>
+                        <button class="action-btn"><i class="fas fa-comment"></i> 5</button>
+                        <button class="action-btn"><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <div class="post-header">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="user-info">
+                            <h4>Emma Rodriguez</h4>
+                            <span class="post-time">6 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Excited to announce that our team just launched the new mobile app! Thanks to everyone who contributed to making this possible. 🚀</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn"><i class="fas fa-heart"></i> 24</button>
+                        <button class="action-btn"><i class="fas fa-comment"></i> 7</button>
+                        <button class="action-btn"><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <div class="post-header">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="user-info">
+                            <h4>Alex Thompson</h4>
+                            <span class="post-time">1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Pro tip: Always test your designs on multiple devices before finalizing. Found some interesting edge cases today that completely changed my approach.</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn"><i class="fas fa-heart"></i> 15</button>
+                        <button class="action-btn"><i class="fas fa-comment"></i> 9</button>
+                        <button class="action-btn"><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-btn" id="libraryBtn">
+                <i class="fas fa-book"></i>
+                <span>Library</span>
+            </button>
+            <button class="nav-btn" id="laniBtn">
+                <i class="fas fa-robot"></i>
+                <span>Lani</span>
+            </button>
+            <button class="nav-btn active" id="spaceBtn">
+                <i class="fas fa-home"></i>
+                <span>Your Space</span>
+            </button>
+            <button class="nav-btn" id="supportBtn">
+                <i class="fas fa-headset"></i>
+                <span>Support</span>
+            </button>
+            <button class="nav-btn" id="adminBtn">
+                <i class="fas fa-cog"></i>
+                <span>Admin</span>
+            </button>
+        </nav>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

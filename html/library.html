@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glimpse - Library</title>
+    <link rel="stylesheet" href="../css/library.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="library-container">
+        <!-- Header -->
+        <header class="library-header">
+            <button class="back-btn" id="backBtn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="logo">
+                <i class="fas fa-eye"></i>
+                <span class="logo-text">Glimpse Library</span>
+            </div>
+            <div class="user-menu">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </header>
+
+        <!-- Library Content -->
+        <main class="main-content">
+            <div class="library-section">
+                <h2 class="section-title">Your Stories</h2>
+                <div class="stories-grid" id="storiesGrid">
+                    <!-- Stories will be populated by JavaScript -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Story Modal -->
+        <div class="modal-overlay" id="storyModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modalTitle">Story Title</h3>
+                    <button class="close-btn" id="closeModal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="modal-tabs">
+                    <button class="tab-btn active" data-tab="summary">
+                        <i class="fas fa-file-text"></i>
+                        Summary
+                    </button>
+                    <button class="tab-btn" data-tab="story">
+                        <i class="fas fa-book"></i>
+                        Full Story
+                    </button>
+                    <button class="tab-btn" data-tab="chat">
+                        <i class="fas fa-comments"></i>
+                        AI Chat
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Summary Tab -->
+                    <div class="tab-content active" id="summaryTab">
+                        <div class="story-info">
+                            <p class="story-author" id="storyAuthor">Author Name</p>
+                            <div class="story-summary" id="storySummary">
+                                Story summary will appear here...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Full Story Tab -->
+                    <div class="tab-content" id="storyTab">
+                        <div class="story-content" id="storyContent">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <p>Loading story...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Chat Tab -->
+                    <div class="tab-content" id="chatTab">
+                        <div class="chat-container">
+                            <div class="chat-messages" id="chatMessages">
+                                <div class="chat-message ai-message">
+                                    <div class="message-avatar">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Hello! I'm here to discuss this story with you. What would you like to know about it?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-input-container">
+                                <input type="text" class="chat-input" id="chatInput" placeholder="Ask me about the story...">
+                                <button class="send-btn" id="sendBtn">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-btn active" id="libraryBtn">
+                <i class="fas fa-book"></i>
+                <span>Library</span>
+            </button>
+            <button class="nav-btn" id="laniBtn">
+                <i class="fas fa-robot"></i>
+                <span>Lani</span>
+            </button>
+            <button class="nav-btn" id="spaceBtn">
+                <i class="fas fa-home"></i>
+                <span>Your Space</span>
+            </button>
+            <button class="nav-btn" id="supportBtn">
+                <i class="fas fa-headset"></i>
+                <span>Support</span>
+            </button>
+            <button class="nav-btn" id="adminBtn">
+                <i class="fas fa-cog"></i>
+                <span>Admin</span>
+            </button>
+        </nav>
+    </div>
+
+    <script src="../js/library.js"></script>
+</body>
+</html>
