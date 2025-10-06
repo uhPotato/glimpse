@@ -88,9 +88,9 @@ loginForm.addEventListener('submit', async (e) => {
         
         // Simulate redirect after successful login
         setTimeout(() => {
-            // Replace with actual redirect logic
+            // Redirect to dashboard page
             console.log('Redirecting to dashboard...');
-            // window.location.href = '/dashboard';
+            window.location.href = 'html/dashboard.html';
         }, 1500);
         
     } catch (error) {
@@ -132,7 +132,7 @@ googleLoginBtn.addEventListener('click', async (e) => {
         
         setTimeout(() => {
             console.log('Redirecting after Google login...');
-            // window.location.href = '/dashboard';
+            window.location.href = 'html/dashboard.html';
         }, 1500);
         
     } catch (error) {
@@ -157,7 +157,7 @@ facebookLoginBtn.addEventListener('click', async (e) => {
         
         setTimeout(() => {
             console.log('Redirecting after Facebook login...');
-            // window.location.href = '/dashboard';
+            window.location.href = 'html/dashboard.html';
         }, 1500);
         
     } catch (error) {
